@@ -1,0 +1,14 @@
+/* Style for the photo */
+.navbar-photo {
+  max-height: 30px; /* Adjust the max height as needed */
+  max-width: 100%;  /* Ensure the width adjusts proportionally */
+  border-radius: 50%; /* Makes the photo round (optional) */
+  margin-right: 10px; /* Adds some space between photo and name */
+}
+
+/* Style for the name */
+.navbar-name {
+  font-size: 16px; /* Adjust the font size as needed */
+  font-weight: bold; /* Make the name bold (optional) */
+  color: white; /* Text color (optional) */
+}
