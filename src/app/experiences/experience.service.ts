@@ -14,7 +14,7 @@ export class ExperienceService {
       "url_img"
     ),
     new ExperienceContentModel(
-      "Principal Software Engineer",
+      "Principal Software Developer",
       "2022",
       "National Bank of Canada",
       [
