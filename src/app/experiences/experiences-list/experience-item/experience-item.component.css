@@ -1,0 +1,5 @@
+/* Inside your component's CSS file (e.g., styles.css or styles.scss) */
+.custom-image {
+  max-height: 50px; /* Set the desired maximum height */
+  width: 150px; /* Automatically adjust width to maintain aspect ratio */
+}

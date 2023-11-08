@@ -1,0 +1,19 @@
+<div class="card border-light shadow-sm">
+<a style="cursor: pointer;">
+        <div class="card-body">
+          <div class="profile" >
+            <div class="pull-left">
+            <h4>{{ experienceContent.title }}</h4>
+            <p>{{ experienceContent.date }}</p>
+            </div>
+            <span class="pull-right">
+              <img
+              [src]="experienceContent.companyLogo"
+              alt="{{ experienceContent.companyLogo }}"
+              class="custom-image"
+              style="max-height: 150px;">
+            </span>
+          </div>
+        </div>
+        </a>
+</div>
