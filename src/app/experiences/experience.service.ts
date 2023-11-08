@@ -11,7 +11,7 @@ export class ExperienceService {
         'Developed application',
         'Collaborated with cross-functional teams'
       ],
-      "url_img"
+      "assets/MIME_BIG.svg"
     ),
     new ExperienceContentModel(
       "Principal Software Developer",
@@ -21,7 +21,7 @@ export class ExperienceService {
         'Programmer',
         'ActiveViam'
       ],
-      "url_img"
+      "https://upload.wikimedia.org/wikipedia/commons/3/3e/National_Bank_Of_Canada.svg"
     )
   ];
 

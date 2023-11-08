@@ -1,4 +1,3 @@
-<ng-container *ngFor="let experienceContent of experiencesContent; let last = last">
-  <app-experience-detail [experienceContent]="experienceContent"></app-experience-detail>
-  <div *ngIf="!last" class="space-separator"></div>
-</ng-container>
+<app-experience-item *ngFor="let experienceContent of experiencesContent; let i = index"
+                     [experienceContent]="experienceContent"></app-experience-item>
+

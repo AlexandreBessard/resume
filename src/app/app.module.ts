@@ -11,6 +11,8 @@ import { ExperiencesComponent } from './experiences/experiences.component';
 import { ExperiencesListComponent } from './experiences/experiences-list/experiences-list.component';
 import { ExperienceDetailComponent } from './experiences/experience-detail/experience-detail.component';
 import {ExperienceService} from "./experiences/experience.service";
+import { ExperienceItemComponent } from './experiences/experiences-list/experience-item/experience-item.component';
+import { ExperienceStartComponent } from './experiences/experience-start/experience-start.component';
 
 @NgModule({
   declarations: [
@@ -21,7 +23,9 @@ import {ExperienceService} from "./experiences/experience.service";
     TopSkillsComponent,
     ExperiencesComponent,
     ExperiencesListComponent,
-    ExperienceDetailComponent
+    ExperienceDetailComponent,
+    ExperienceItemComponent,
+    ExperienceStartComponent
   ],
   imports: [
     BrowserModule,
