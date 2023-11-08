@@ -1,4 +1,4 @@
-import { Component } from '@angular/core';
+import {Component, OnInit} from '@angular/core';
 import {ExperienceContentModel} from "../experience-content.model";
 import {ExperienceService} from "../experience.service";
 
@@ -7,7 +7,7 @@ import {ExperienceService} from "../experience.service";
   templateUrl: './experiences-list.component.html',
   styleUrls: ['./experiences-list.component.css']
 })
-export class ExperiencesListComponent {
+export class ExperiencesListComponent implements OnInit {
 
   experiencesContent: ExperienceContentModel[] = [];
 
