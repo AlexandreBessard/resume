@@ -3,7 +3,7 @@ import {ExperienceContentModel} from "./experience-content.model";
 export class ExperienceService {
 
   private experiencesContent: ExperienceContentModel[] = [
-    new ExperienceContentModel(
+    new ExperienceContentModel(0,
       "Senior Software Engineer",
       "2023",
       "Mimecast",
@@ -14,6 +14,7 @@ export class ExperienceService {
       "assets/MIME_BIG.svg"
     ),
     new ExperienceContentModel(
+      1,
       "Principal Software Developer",
       "2022",
       "National Bank of Canada",
@@ -27,6 +28,10 @@ export class ExperienceService {
 
   getExperiences(): ExperienceContentModel[] {
     return this.experiencesContent.slice();
+  }
+
+  getExperience(id: number) {
+    return this.experiencesContent[id];
   }
 
 }

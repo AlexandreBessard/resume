@@ -11,8 +11,11 @@ export class ExperienceItemComponent {
   @Input()
   experienceContent: ExperienceContentModel;
 
+  @Input()
+  index: number = 0;
+
   constructor() {
-    this.experienceContent = new ExperienceContentModel('', '', '', [], '');
+    this.experienceContent = new ExperienceContentModel(0,'', '', '', [], '');
   }
 
 }
