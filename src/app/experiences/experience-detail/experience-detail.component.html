@@ -1,3 +1,26 @@
-<!-- component used to display in detail the selected experience -->
-<p>{{ experienceContent.title }}</p>
-
+<div class="row">
+  <div class="col-xs-12">
+    <div class="card border-light shadow-sm">
+      <div class="card-body">
+        <div class="profile">
+          <img
+            [src]="experienceContent.companyLogo"
+            alt="{{ experienceContent.companyTitle }}"
+            class="img-responsive"
+            style="max-height: 55px;">
+          <p>{{ experienceContent.date }}</p>
+        </div>
+      </div>
+      <div class="card-body">
+      <div class="profile">
+        <ul class="list-group">
+          <li class="list-group-item"
+          *ngFor="let desc of experienceContent.description">
+            {{ desc }}
+          </li>
+        </ul>
+      </div>
+      </div>
+    </div>
+  </div>
+</div>
