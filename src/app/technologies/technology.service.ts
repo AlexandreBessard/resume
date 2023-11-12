@@ -101,25 +101,15 @@ export class TechnologyService {
         "      </p>\n" +
         "    </section>",
       "assets/technologies/terraform.svg"),
-    new TechnologyContentModel("GitLab",
-        "<section>\n" +
-        "      <h2>Version Control with GitLab</h2>\n" +
-        "      <p>\n" +
-        "        Proficient in utilizing GitLab for version control, collaborative development,\n" +
-        "        and CI/CD pipelines. Managing source code repositories and ensuring seamless\n" +
-        "        collaboration among development teams.\n" +
-        "      </p>\n" +
-        "    </section>",
+    new TechnologyContentModel("Version Control with GitLab",
+        "<h2>Version Control with GitLab</h2>" +
+        "Proficient in utilizing GitLab for version control, collaborative development and CI/CD pipelines. Managing source code repositories and ensuring seamless collaboration among development teams.",
         "assets/technologies/gitlab.svg"),
     new TechnologyContentModel("Jenkins",
-        "<section>\n" +
-        "      <h2>Continuous Integration with Jenkins</h2>\n" +
-        "      <p>\n" +
-        "        Proficient in configuring and managing Jenkins for continuous integration, enabling\n" +
-        "        automated building, testing, and deployment of software projects. Ensuring rapid\n" +
-        "        and reliable software delivery.\n" +
-        "      </p>\n" +
-        "    </section>",
+        "<h2>Continuous Integration with Jenkins</h2>" +
+        "<p>Proficient in configuring and managing Jenkins for continuous integration, enabling " +
+        " automated building, testing, and deployment of software projects. Ensuring rapid" +
+        " and reliable software delivery.</p>",
         "assets/technologies/jenkins.svg")
   ];
 
