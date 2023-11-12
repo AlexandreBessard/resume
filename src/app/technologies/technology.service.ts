@@ -4,8 +4,8 @@ export class TechnologyService {
 
   private technologiesContent: TechnologyContentModel[] = [
     new TechnologyContentModel("Java",
-      "Java SE",
-      "url image"),
+      "<p style='color: red;'>Java SE</p>",
+      "assets/technologies/javaLogo.svg"),
     new TechnologyContentModel("Spring Framework",
       "Java",
       "url image"),
