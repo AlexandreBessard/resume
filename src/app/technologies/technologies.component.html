@@ -1,1 +1,9 @@
-<p>technologies works!</p>
+<div class="container">
+  <div class="row">
+    <!-- Use ngFor to iterate over the technologiesContent array -->
+    <div *ngFor="let technology of technologiesContent" class="col-12 col-md-4 mb-4">
+      <!-- Include your component for each technology item -->
+      <app-technology-item [technologyContent]="technology"></app-technology-item>
+    </div>
+  </div>
+</div>

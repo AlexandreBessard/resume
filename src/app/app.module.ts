@@ -16,6 +16,7 @@ import { ExperienceStartComponent } from './experiences/experience-start/experie
 import { TechnologiesComponent } from './technologies/technologies.component';
 import { CertificationsComponent } from './certifications/certifications.component';
 import { ContactComponent } from './contact/contact.component';
+import {TechnologyItemComponent} from "./technologies/technology-item/technology-item.component";
 
 @NgModule({
   declarations: [
@@ -31,7 +32,8 @@ import { ContactComponent } from './contact/contact.component';
     ExperienceStartComponent,
     TechnologiesComponent,
     CertificationsComponent,
-    ContactComponent
+    ContactComponent,
+    TechnologyItemComponent
   ],
   imports: [
     BrowserModule,

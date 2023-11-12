@@ -11,16 +11,11 @@
           <p>{{ experienceContent.date }}</p>
         </div>
       </div>
-      <div class="card-body">
-      <div class="profile">
-        <ul class="list-group">
-          <li class="list-group-item"
-          *ngFor="let desc of experienceContent.description">
-            {{ desc }}
-          </li>
-        </ul>
-      </div>
-      </div>
+      <ul class="list-group">
+        <li class="list-group-item" *ngFor="let desc of experienceContent.description">
+          {{ desc }}
+        </li>
+      </ul>
     </div>
   </div>
 </div>
