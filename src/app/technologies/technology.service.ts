@@ -73,22 +73,13 @@ export class TechnologyService {
       "assets/technologies/spring.svg"),
     new TechnologyContentModel("AWS",
       "<section>\n" +
-      "      <h2>EKS (Elastic Kubernetes Service)</h2>\n" +
-      "      <p>\n" +
-      "        Hands-on experience with Amazon EKS for deploying, managing, and scaling containerized\n" +
-      "        applications using Kubernetes. Utilizing container orchestration for efficient\n" +
-      "        container management.\n" +
-      "      </p>\n" +
-      "    </section>\n" +
-      "\n" +
-      "    <section>\n" +
-      "      <h2>ECS (Elastic Container Service)</h2>\n" +
-      "      <p>\n" +
-      "        Expertise in Amazon ECS for running, stopping, and managing Docker containers on a\n" +
-      "        cluster. Implementing containerized applications with a highly scalable and\n" +
-      "        cost-effective container orchestration service.\n" +
-      "      </p>\n" +
-      "    </section>",
+        "      <h2>Cloud Infrastructure with AWS</h2>\n" +
+        "      <p>\n" +
+        "        Proficient in designing, implementing, and managing cloud infrastructure on AWS.\n" +
+        "        Leveraging a wide range of AWS services to build scalable, secure, and highly\n" +
+        "        available solutions for diverse application workloads.\n" +
+        "      </p>\n" +
+        "    </section>",
       "assets/technologies/AWS.svg"),
     new TechnologyContentModel("Kubernetes",
       "<section>\n" +
@@ -101,7 +92,7 @@ export class TechnologyService {
         "    </section>",
       "assets/technologies/kubernetes.svg"),
     new TechnologyContentModel("Terraform",
-      "    <section>\n" +
+      "<section>\n" +
         "      <h2>Infrastructure as Code with Terraform</h2>\n" +
         "      <p>\n" +
         "        Proficient in using Terraform for Infrastructure as Code (IaC) to define, deploy,\n" +
@@ -109,7 +100,27 @@ export class TechnologyService {
         "        consistency and repeatability in infrastructure provisioning.\n" +
         "      </p>\n" +
         "    </section>",
-      "assets/technologies/terraform.svg")
+      "assets/technologies/terraform.svg"),
+    new TechnologyContentModel("GitLab",
+        "<section>\n" +
+        "      <h2>Version Control with GitLab</h2>\n" +
+        "      <p>\n" +
+        "        Proficient in utilizing GitLab for version control, collaborative development,\n" +
+        "        and CI/CD pipelines. Managing source code repositories and ensuring seamless\n" +
+        "        collaboration among development teams.\n" +
+        "      </p>\n" +
+        "    </section>",
+        "assets/technologies/gitlab.svg"),
+    new TechnologyContentModel("Jenkins",
+        "<section>\n" +
+        "      <h2>Continuous Integration with Jenkins</h2>\n" +
+        "      <p>\n" +
+        "        Proficient in configuring and managing Jenkins for continuous integration, enabling\n" +
+        "        automated building, testing, and deployment of software projects. Ensuring rapid\n" +
+        "        and reliable software delivery.\n" +
+        "      </p>\n" +
+        "    </section>",
+        "assets/technologies/jenkins.svg")
   ];
 
   getTechnologies(): TechnologyContentModel[] {
