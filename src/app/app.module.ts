@@ -17,6 +17,7 @@ import { TechnologiesComponent } from './technologies/technologies.component';
 import { CertificationsComponent } from './certifications/certifications.component';
 import { ContactComponent } from './contact/contact.component';
 import {TechnologyItemComponent} from "./technologies/technology-item/technology-item.component";
+import {CertificationService} from './certifications/certification.service';
 
 @NgModule({
   declarations: [
@@ -39,7 +40,7 @@ import {TechnologyItemComponent} from "./technologies/technology-item/technology
     BrowserModule,
     AppRoutingModule
   ],
-  providers: [ExperienceService],
+  providers: [ExperienceService, CertificationService],
   bootstrap: [AppComponent]
 })
 export class AppModule { }
