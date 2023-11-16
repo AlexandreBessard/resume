@@ -3,6 +3,7 @@
   <img [src]="technologyContent.image" class="card-img-top technology-image" [alt]="technologyContent.title">
   <div class="card-body">
     <div class="profile">
+      <h2>{{ technologyContent.title }}</h2>
       <!-- Read as HTML content by Angular -->
       <div [innerHTML]="sanitizeHtml(technologyContent.description)"></div>
     </div>
