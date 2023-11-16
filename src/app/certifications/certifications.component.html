@@ -2,10 +2,14 @@
     <div class="row text-white">
       <div class="col-3 p-2">
         <div class="d-grid gap-2">
-          <button class="btn btn-outline-primary">
+          <button class="btn btn-outline-primary" (click)="changeCategory()">
             All
           </button>
-          <button class="btn btn-outline-primary">
+          <button *ngFor="let cat of categories"
+                  class="btn btn-outline-primary"
+                  [class.active]="cat == selectedCategory"
+                  (click)="changeCategory(cat)">
+            {{cat}}
           </button>
         </div>
       </div><!-- Add Bootstrap classes to the table -->

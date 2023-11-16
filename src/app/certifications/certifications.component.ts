@@ -1,5 +1,5 @@
 import { Component } from '@angular/core';
-import {CertificationService} from './certification.service';
+import {CertificationRepository} from './certification.repository';
 
 @Component({
   selector: 'app-certifications',
@@ -8,10 +8,20 @@ import {CertificationService} from './certification.service';
 })
 export class CertificationsComponent {
 
-  constructor(private certificationService: CertificationService) {}
+  selectedCategory: string | undefined;
+
+  constructor(private certificationRepository: CertificationRepository) {}
+
+  changeCategory(newCategory?: string) {
+    this.selectedCategory = newCategory;
+  }
 
   get certifications() {
-    return this.certificationService.getCertifications();
+    return this.certificationRepository.getCertifications(this.selectedCategory);
+  }
+
+  get categories() {
+    return this.certificationRepository.getCategories();
   }
 
 }
