@@ -1,0 +1,43 @@
+
+
+.contact-container {
+  max-width: 600px;
+  margin: 20px auto;
+  padding: 20px;
+  background-color: #fff;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+.contact-method {
+  display: flex;
+  align-items: center;
+  margin-bottom: 20px;
+}
+
+.contact-icon {
+  margin-right: 10px;
+  font-size: 24px;
+}
+
+.contact-icon img {
+  width: 40px;
+  height: 40px;
+  margin-right: 10px;
+}
+
+.contact-info {
+  display: flex;
+  flex-direction: column;
+}
+
+.qrcode-container {
+  text-align: center;
+  margin-top: 20px;
+}
+
+.qrcode-image {
+  width: 50%; /* Adjust the size as needed */
+  margin-left: 20px; /* Add some spacing */
+  border-radius: 20px; /* Add rounded corners */
+}
+

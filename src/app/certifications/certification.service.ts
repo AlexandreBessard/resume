@@ -36,13 +36,13 @@ export class CertificationService {
       providedBy: "HashiCorp",
       isExpired: false,
       image: "assets/certifications/terraform.png",
-      category: Category.DEVOPS
+      category: Category.OTHER
     },
     { title: "CKAD: Certified Kubernetes Application Developer",
       providedBy: "The Linux Foundation",
       isExpired: false,
       image: "assets/certifications/kubernetes.png",
-      category: Category.DEVOPS
+      category: Category.OTHER
     },
     { title: "Oracle Certified Professional, Java SE 8 Programmer",
       providedBy: "Oracle",
@@ -60,7 +60,7 @@ export class CertificationService {
       providedBy: "Oracle",
       isExpired: false,
       image: "assets/certifications/spring_framework.png",
-      category: Category.SPRING
+      category: Category.OTHER
     }
   ];
 
