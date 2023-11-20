@@ -34,3 +34,7 @@ p:last-child {
   color: #007BFF;
   font-weight: bold;
 }
+
+.odd-row {
+  background-color: #eef1ee; /* Set the background color for even rows */
+}

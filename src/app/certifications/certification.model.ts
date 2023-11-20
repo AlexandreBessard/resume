@@ -15,5 +15,6 @@
    JAVA = "JAVA",
    OTHER = "OTHER",
    DEVOPS = "DEVOPS",
-   SPRING = "SPRING"
+   SPRING = "SPRING",
+   ALL = "All"
  }

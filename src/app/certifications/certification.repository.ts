@@ -16,7 +16,6 @@ export class CertificationRepository {
       this.categories = data
         .map(cert => cert.category)
         .filter((c, index, array) => array.indexOf(c) == index).sort();
-      console.log(this.categories);
     });
   }
 

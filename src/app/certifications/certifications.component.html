@@ -14,7 +14,9 @@
         </div>
       </div><!-- Add Bootstrap classes to the table -->
       <div class="col-9 p-2 text-dark">
-    <div *ngFor="let certs of certifications" class="card m-1 p-1 bg-light">
+    <div *ngFor="let certs of certifications; let i = index"
+         [ngClass]="{'odd-row': i % 2 !== 0}"
+         class="card m-1 p-1">
       <div class="row g-0">
       <div class="col-md-4">
           <img

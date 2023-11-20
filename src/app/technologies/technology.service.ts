@@ -3,25 +3,15 @@ import {TechnologyContentModel} from "./technology-content.model";
 export class TechnologyService {
 
   private technologiesContent: TechnologyContentModel[] = [
-    new TechnologyContentModel("Java, 17, 11, 8",
-      "<section>\n" +
-      "      <p>\n" +
-      "        Leveraging Java 17's latest features such as pattern matching, sealed classes,\n" +
-      "        and record types to build modern and maintainable applications.\n" +
-      "      </p>\n" +
-      "    </section>\n" +
-      "\n" +
-      "    <section>\n" +
-      "      <p>\n" +
-      "        Extensive experience with Java 11 for robust and secure applications.\n" +
-      "      </p>\n" +
-      "    </section>\n" +
-      "\n" +
-      "    <section>\n" +
-      "      <p>\n" +
-      "        Java 8's lambda expressions and stream API for writing concise,\n" +
-      "        expressive, and efficient code, contributing to legacy project migrations.\n" +
-      "      </p>\n" +
+    new TechnologyContentModel("Java, 8, 11, 17",
+      "<section><br>" +
+      "<p>Leveraging Java 17's latest features such as pattern matching, sealed classes, and record types to build modern and maintainable applications.</p>" +
+      "    </section>" +
+      "    <section><br>" +
+      "<p>Extensive experience with Java 11 for robust and secure applications.</p>" +
+      "    </section>" +
+      "    <section><br>" +
+      "<p>Java 8's lambda expressions and stream API for writing concise, expressive, and efficient code, contributing to legacy project migrations.</p>" +
       "    </section>",
       "assets/technologies/java.svg"),
 
@@ -31,7 +21,7 @@ export class TechnologyService {
       "        Embracing the power of the latest Angular version to create dynamic and scalable\n" +
       "        web applications.\n" +
       "      </p>\n" +
-      "    </section>\n" +
+      "    </section><br>\n" +
       "        <p>Proficient in leveraging Angular's reactive programming capabilities, including\n" +
       "        RxJS, to build responsive and real-time user interfaces. Implementing observable\n" +
       "        patterns for seamless data flow.\n" +
@@ -45,18 +35,17 @@ export class TechnologyService {
       "      </p>\n" +
       "    </section>\n" +
       "\n" +
-      "    <section>\n" +
+      "    <section><br>\n" +
       "      <p>\n" +
       "        Extensive experience with Spring MVC for building flexible and maintainable\n" +
       "        web applications.\n" +
       "      </p>\n" +
       "    </section>\n" +
       "\n" +
-      "    <section>\n" +
+      "    <section><br>\n" +
       "      <p>\n" +
       "        Expertise in integrating Spring Data and JPA for seamless data access and\n" +
-      "        persistence. Implementing efficient database interactions and query optimization\n" +
-      "        for data-driven applications.\n" +
+      "        persistence. "+
       "      </p>\n" +
       "    </section>",
       "assets/technologies/spring.svg"),
@@ -107,7 +96,6 @@ export class TechnologyService {
         "      </p>\n" +
         "    </section>",
         "assets/technologies/kafka.svg")
-
   ];
 
   getTechnologies(): TechnologyContentModel[] {
