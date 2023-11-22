@@ -1,12 +1,16 @@
 <div class="card border-light shadow-sm">
-    <div class="d-flex justify-content-center align-items-center">
-  <img [src]="technologyContent.image" class="card-img-top technology-image" [alt]="technologyContent.title">
-  <div class="card-body">
-    <div class="profile">
-      <h2>{{ technologyContent.title }}</h2>
-      <!-- Read as HTML content by Angular -->
-      <div [innerHTML]="sanitizeHtml(technologyContent.description)"></div>
+  <div class="d-flex justify-content-center align-items-center">
+    <img [src]="technologyContent.image" class="card-img-top technology-image" [alt]="technologyContent.title">
+    <div class="card-body">
+      <div class="profile">
+        <div class="background-overlay" [style]="{'background-image': 'url(' + technologyContent.image + ')', 'background-size': 'cover'}">
+          <div class="text-white">
+          <h2 class="highlight">{{ technologyContent.title }}</h2>
+          <!-- Read as HTML content by Angular -->
+          <div [innerHTML]="sanitizeHtml(technologyContent.description)"></div>
+          </div>
+        </div>
+      </div>
     </div>
   </div>
-</div>
 </div>
