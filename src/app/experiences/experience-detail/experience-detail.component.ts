@@ -2,6 +2,7 @@ import {Component, Input, OnInit} from '@angular/core';
 import { ExperienceContentModel } from '../experience-content.model';
 import {ExperienceService} from "../experience.service";
 import {ActivatedRoute, Params} from "@angular/router";
+import {enableDebugTools} from '@angular/platform-browser';
 
 @Component({
   selector: 'app-experience-detail',
@@ -30,4 +31,5 @@ export class ExperienceDetailComponent implements OnInit {
       );
   }
 
+  protected readonly enableDebugTools = enableDebugTools;
 }

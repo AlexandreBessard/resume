@@ -29,6 +29,17 @@ export class ExperienceService {
       "Canada",
       "Toronto",
       "assets/countries/canada.svg"
+    ),
+    new ExperienceContentModel(
+      3,
+      "Analyst Software Programmer",
+      "2019 - 2021",
+      "Desjardins",
+      [],
+      "assets/Desjardins.svg",
+      "Canada",
+      "Montreal",
+      "assets/countries/canada.svg"
     )
   ];
 

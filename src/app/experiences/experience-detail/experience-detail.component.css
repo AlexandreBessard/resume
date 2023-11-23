@@ -16,3 +16,9 @@
   text-align: center;
   margin-top: 5px; /* Adjust the margin as needed */
 }
+
+/* Add this style to your existing styles or create a new styles file */
+.bullet-point {
+  margin-right: 8px; /* Adjust the margin as needed */
+}
+

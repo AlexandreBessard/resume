@@ -8,7 +8,8 @@
             alt="{{ experienceContent.companyTitle }}"
             class="img-responsive"
             style="max-height: 55px;">
-          <p>{{ experienceContent.date }}</p>
+          <p><br>{{ experienceContent.date }}</p>
+          <p>{{experienceContent.title}}</p>
           <div class="small-image-container">
             <img
               [src]="experienceContent.imgCountry"
@@ -19,9 +20,9 @@
           </div>
         </div>
       </div>
-      <ul class="list-group">
+      <ul class="list-group list-group-flush">
         <li class="list-group-item" *ngFor="let desc of experienceContent.description">
-          {{ desc }}
+          <span class="bullet-point">&#8226;</span> {{ desc }}
         </li>
       </ul>
     </div>
