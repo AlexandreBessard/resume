@@ -9,6 +9,14 @@
             class="img-responsive"
             style="max-height: 55px;">
           <p>{{ experienceContent.date }}</p>
+          <div class="small-image-container">
+            <img
+              [src]="experienceContent.imgCountry"
+              alt="Small Image"
+              class="small-image"
+            >
+            <div class="small-image-text">{{experienceContent.city}}</div>
+          </div>
         </div>
       </div>
       <ul class="list-group">

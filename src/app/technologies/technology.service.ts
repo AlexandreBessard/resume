@@ -77,7 +77,8 @@ export class TechnologyService {
         "    </section>",
       "assets/technologies/terraform.svg"),
     new TechnologyContentModel("Version Control with GitLab",
-        "Proficient in utilizing GitLab for version control, collaborative development and CI/CD pipelines. Managing source code repositories and ensuring seamless collaboration among development teams.",
+        "<section>\n" +
+      " <p>Proficient in utilizing GitLab for version control, collaborative development and CI/CD pipelines. Managing source code repositories and ensuring seamless collaboration among development teams.</p>",
         "assets/technologies/gitlab.svg"),
 
     new TechnologyContentModel("Jenkins",

@@ -11,7 +11,10 @@ export class ExperienceService {
         'Developed application',
         'Collaborated with cross-functional teams'
       ],
-      "assets/MIME_BIG.svg"
+      "assets/MIME_BIG.svg",
+      "Canada",
+      "Toronto",
+      "assets/countries/canada.svg"
     ),
     new ExperienceContentModel(
       1,
@@ -22,7 +25,10 @@ export class ExperienceService {
         'Programmer',
         'ActiveViam'
       ],
-      "https://upload.wikimedia.org/wikipedia/commons/3/3e/National_Bank_Of_Canada.svg"
+      "https://upload.wikimedia.org/wikipedia/commons/3/3e/National_Bank_Of_Canada.svg",
+      "Canada",
+      "Toronto",
+      "assets/countries/canada.svg"
     )
   ];
 

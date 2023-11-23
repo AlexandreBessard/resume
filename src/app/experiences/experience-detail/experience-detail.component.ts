@@ -17,7 +17,8 @@ export class ExperienceDetailComponent implements OnInit {
 
   constructor(private experienceService: ExperienceService,
               private route: ActivatedRoute) {
-    this.experienceContent = new ExperienceContentModel(-1,'', '', '', [], '');
+    this.experienceContent = new ExperienceContentModel(-1,'', '', '', [], '',
+      "", "", "");
   }
 
   ngOnInit(): void {

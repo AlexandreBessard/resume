@@ -1,4 +1,24 @@
-<div class="container">
+<div class="card border-light shadow-sm" style="margin-bottom: 10px">
+  <div class="d-flex justify-content-center align-items-center">
+    <div class="card-body">
+      <div class="profile">
+<!--        <p>These certifications signify my commitment to staying at the forefront of technological advancements
+          and industry <span class="highlight">best practices.</span></p>
+        <p>By investing in these certifications, I've not only gained <span class="highlight">specialized knowledge</span>
+          but also demonstrated
+          my eagerness to <span class="highlight">contribute effectively to projects</span>,
+          ensuring that I can make an <span class="highlight">immediate impact</span> on your team's success.</p>-->
+        <p>
+          Throughout my career, I have extensively utilized a diverse set of technologies,
+          including Java, Angular, Spring, AWS (Amazon Web Services) and various other tools.
+          <br>
+          Together, these technologies and DevOps tools have empowered me to create <span class="highlight">robust, scalable, and
+          high-performing</span> applications throughout my professional journey.
+        </p>
+      </div>
+    </div>
+  </div>
+</div>
   <div class="row">
     <!-- Use ngFor to iterate over the technologiesContent array -->
     <div *ngFor="let technology of technologiesContent" class="col-12 col-md-4 mb-4">
@@ -6,4 +26,5 @@
       <app-technology-item [technologyContent]="technology"></app-technology-item>
     </div>
   </div>
-</div>
+
+

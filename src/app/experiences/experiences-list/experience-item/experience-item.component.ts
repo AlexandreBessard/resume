@@ -15,7 +15,8 @@ export class ExperienceItemComponent {
   index: number = 0;
 
   constructor() {
-    this.experienceContent = new ExperienceContentModel(0,'', '', '', [], '');
+    this.experienceContent = new ExperienceContentModel(0,'', '', '', [], '',
+      "", "", "");
   }
 
 }
