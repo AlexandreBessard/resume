@@ -18,6 +18,7 @@ const routes: Routes = [
   { path: 'technologies', component: TechnologiesComponent },
   { path: 'certifications', component: CertificationsComponent },
   { path: 'contact', component: ContactComponent },
+  { path: '', pathMatch: 'full', redirectTo: '/about'},
   { path: '**', redirectTo: "/about"}
 ];
 
