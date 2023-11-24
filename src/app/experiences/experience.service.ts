@@ -40,7 +40,16 @@ export class ExperienceService {
       "Canada",
       "Montreal",
       "assets/countries/canada.svg"
-    )
+    ),
+    new ExperienceContentModel(4,
+      "Developer",
+      "2018",
+      "Accenture",
+      [],
+      "assets/companies/accenture.svg",
+      "France",
+      "Paris",
+      "assets/countries/france.svg")
   ];
 
   getExperiences(): ExperienceContentModel[] {
