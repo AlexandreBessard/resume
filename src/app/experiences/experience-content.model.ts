@@ -9,6 +9,7 @@ export class ExperienceContentModel {
               public companyLogo: string,
               public country?: string,
               public city?:string,
-              public imgCountry?: string,) {
+              public imgCountry?: string,
+              public skills?: string[]) {
   }
 }

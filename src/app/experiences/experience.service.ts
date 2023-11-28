@@ -8,48 +8,70 @@ export class ExperienceService {
       "2023",
       "Mimecast",
       [
-        'Developed application',
-        'Collaborated with cross-functional teams'
+        "Created and enforced coding standards within the team and ensuring consistency with company-wide technology adoptions.",
+        "Designing new features or enhancements with the collaboration of architects.",
+        "Leaded backlog grooming, planning, design reviews, and code reviews.",
+        "Coached and mentored team members to develop their skills and ensure adherence to project design.",
+        "Provided guidance to other teams on proper API/REST design and practices, as an active participant of the API Guild."
       ],
       "assets/MIME_BIG.svg",
       "Canada",
       "Toronto",
-      "assets/countries/canada.svg"
+      "assets/countries/canada.svg",
+      ['Micronaut', 'Docker', 'Gitlab', 'Terraform', 'LocalStack', 'AWS', 'Java', 'Jenkins']
     ),
     new ExperienceContentModel(
       1,
-      "Principal Software Developer",
+      "Senior Developer",
       "2022",
       "National Bank of Canada",
       [
-        'Programmer',
-        'ActiveViam'
+        'Implemented new features and functionalities in existing applications to meet business needs.',
+        'Collaborated with QA teams to define test cases and ensure the reliability and integrity of software solutions.',
+        'Participated in architectural discussions and provided input on system design decisions.',
+        'Investigated and resolved complex software issues and bugs reported by end-users or identified during testing phases.',
+        'Created and maintained technical documentation for software solutions and presentations.',
+        'Communicate effectively with team members, project managers, and stakeholders to provide project updates and address any issues or concerns.',
+        'Work within an Agile development environment, participating in sprint planning, daily stand-ups, and retrospectives.',
+        'Identify areas for process improvement and contribute to the continuous improvement of development practices.'
       ],
       "https://upload.wikimedia.org/wikipedia/commons/3/3e/National_Bank_Of_Canada.svg",
       "Canada",
       "Toronto",
-      "assets/countries/canada.svg"
+      "assets/countries/canada.svg",
+      ['Docker', 'Spring Boot', 'Bitbucket', 'Terraform', 'React', 'AWS', 'Kubernetes',
+        'Splunk', 'Java', 'Maven', 'Jenkins']
     ),
     new ExperienceContentModel(
       3,
       "Analyst Software Programmer",
       "2019 - 2021",
       "Desjardins",
-      [],
+      ["Develop applications, programs, or computer tools of medium to high complexity and perform the necessary tests and fixes.",
+        "Ensure and carry out the update of various databases and recommend any improvements aimed at optimizing their quality and efficiency.",
+        "Analyze system components, functional and non-functional specifications, change requests, or technical issues encountered.",
+        "Ensure the resolution of technically complex problems, recommend the evolution of work methods and procedures from a technical perspective, and participate in their development to optimize their quality and efficiency."],
       "assets/Desjardins.svg",
       "Canada",
       "Montreal",
-      "assets/countries/canada.svg"
+      "assets/countries/canada.svg",
+      []
     ),
     new ExperienceContentModel(4,
       "Developer",
       "2018",
       "Accenture",
-      [],
+      ["Developed and documented software testing plans, to develop innovative concepts and applications, working in an automation team.",
+        "Participated in the development of automation solutions, from prototypes of new functionality and technologies to their integration into the general products and offers of the company",
+        "Delivered automation solutions; to ensure smooth and uninterrupted operation of applications and components in cooperation with the testing team",
+        "Monitored and correct any defects or performance issues detected during testing",
+        "Involved in the development of the solution to perform design, coding, application maintenance and testing works according to the manager's instructions",
+        "Wrote and provided code according to time and quality expectations"],
       "assets/companies/accenture.svg",
       "France",
       "Paris",
-      "assets/countries/france.svg")
+      "assets/countries/france.svg",
+      [])
   ];
 
   getExperiences(): ExperienceContentModel[] {

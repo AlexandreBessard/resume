@@ -1,6 +1,9 @@
 .technology-image {
   max-width: 20%;
   max-height: 100%; /* Adjust the max height as needed */
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
 }
 
 .profile .background-overlay {

@@ -19,12 +19,20 @@
             <div class="small-image-text">{{experienceContent.city}}</div>
           </div>
         </div>
+        <ul class="custom-list">
+          <li class="list-group-item" *ngFor="let desc of experienceContent.description">
+            <span class="bullet-point">&#8226;</span> {{ desc }}<br><br>
+          </li>
+        </ul>
       </div>
-      <ul class="list-group list-group-flush">
-        <li class="list-group-item" *ngFor="let desc of experienceContent.description">
-          <span class="bullet-point">&#8226;</span> {{ desc }}
-        </li>
-      </ul>
+      <div class="card-body">
+        <div class="profile">
+          <p>Skills: <br>
+            <span *ngFor="let skill of experienceContent.skills;
+            let last = last">{{ skill }}{{ !last ? ', ' : '' }}</span>
+          </p>
+        </div>
+      </div>
     </div>
   </div>
 </div>
