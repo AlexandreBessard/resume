@@ -19,6 +19,7 @@ import { ContactComponent } from './contact/contact.component';
 import {TechnologyItemComponent} from "./technologies/technology-item/technology-item.component";
 import {CertificationService} from './certifications/certification.service';
 import {FooterComponent} from './footer/footer.component';
+import {SafeHtmlPipe} from './pipes/safehtml.pipe';
 
 @NgModule({
   declarations: [
@@ -35,7 +36,8 @@ import {FooterComponent} from './footer/footer.component';
     TechnologiesComponent,
     CertificationsComponent,
     ContactComponent,
-    TechnologyItemComponent
+    TechnologyItemComponent,
+    SafeHtmlPipe
   ],
     imports: [
         BrowserModule,

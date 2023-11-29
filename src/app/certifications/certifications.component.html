@@ -1,3 +1,4 @@
+<!--
 <div class="container-fluid">
     <div class="card border-light shadow-sm">
       <div class="card-body">
@@ -26,7 +27,7 @@
             {{cat}}
           </button>
         </div>
-      </div><!-- Add Bootstrap classes to the table -->
+      </div>&lt;!&ndash; Add Bootstrap classes to the table &ndash;&gt;
       <div class="col-9 p-2 text-dark">
     <div *ngFor="let certs of certifications; let i = index"
          [ngClass]="{'odd-row': i % 2 !== 0}"
@@ -48,5 +49,59 @@
     </div>
   </div>
 </div>
+</div>
+
+-->
+
+<div class="container-fluid">
+  <div class="card border-light shadow-sm">
+    <div class="card-body">
+      <div class="profile">
+        <p>
+          These certifications signify my commitment to staying at the forefront of technological advancements and industry
+          best practices.
+        </p>
+        <p>
+          By investing in these certifications, I've not only gained
+          <span class="highlight">specialized knowledge</span> but also demonstrated my eagerness to
+          <span class="highlight">contribute effectively to projects</span>, ensuring that I can make an
+          <span class="highlight">immediate impact</span> on your team's success.
+        </p>
+      </div>
+    </div>
+  </div>
+</div>
+
+<div class="container-fluid">
+  <div class="row text-white">
+    <div class="col-3 p-2">
+      <div class="d-grid gap-2">
+        <button class="btn btn-outline-primary" (click)="changeCategory()" [class.active]="!selectedCategory">
+          All
+        </button>
+        <button *ngFor="let cat of categories" class="btn btn-outline-primary" [class.active]="cat == selectedCategory"
+                (click)="changeCategory(cat)">
+          {{ cat }}
+        </button>
+      </div>
+    </div>
+    <div class="col-9 p-2 text-dark">
+      <div *ngFor="let certs of certifications; let i = index" [ngClass]="{'odd-row': i % 2 !== 0}" class="card m-1 p-1">
+        <a [href]="certs.url" target="_blank">
+          <div class="row g-0">
+            <div class="col-md-4">
+              <img [src]="certs.image" alt="{{ certs.title }}" class="img-fluid" style="max-height: 110px;">
+            </div>
+            <div class="col-md-8">
+              <h5 class="text-dark" style="margin-top: 37px;">{{ certs.title }}</h5>
+              <p class="position-absolute bottom-0 end-0 p-2" [class.text-danger]="certs.isExpired">
+                {{ certs.isExpired ? 'Expired' : '' }}
+              </p>
+            </div>
+          </div>
+        </a>
+      </div>
+    </div>
+  </div>
 </div>
 

@@ -3,3 +3,8 @@
   max-width: 680px;
   padding: 0 15px;
 }
+
+.footer {
+  background: linear-gradient(to right, #4CAF50, #2196F3); /* Replace with your preferred colors */
+  color: white; /* Set text color to white or a color that contrasts well with your background */
+}

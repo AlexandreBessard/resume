@@ -37,7 +37,6 @@
 
 .qrcode-image {
   width: 50%; /* Adjust the size as needed */
-  margin-left: 20px; /* Add some spacing */
+  margin-left: 60px; /* Add some spacing */
   border-radius: 20px; /* Add rounded corners */
 }
-

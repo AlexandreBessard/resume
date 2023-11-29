@@ -9,7 +9,8 @@
             class="img-responsive"
             style="max-height: 55px;">
           <p><br>{{ experienceContent.date }}</p>
-          <p>{{experienceContent.title}}</p>
+          <h5 class="bold-text">{{experienceContent.title}}</h5>
+          <br>
           <div class="small-image-container">
             <img
               [src]="experienceContent.imgCountry"
@@ -18,20 +19,16 @@
             >
             <div class="small-image-text">{{experienceContent.city}}</div>
           </div>
-        </div>
         <ul class="custom-list">
           <li class="list-group-item" *ngFor="let desc of experienceContent.description">
             <span class="bullet-point">&#8226;</span> {{ desc }}<br><br>
           </li>
         </ul>
-      </div>
-      <div class="card-body">
-        <div class="profile">
           <p>Skills: <br>
             <span *ngFor="let skill of experienceContent.skills;
             let last = last">{{ skill }}{{ !last ? ', ' : '' }}</span>
           </p>
-        </div>
+      </div>
       </div>
     </div>
   </div>

@@ -9,7 +9,7 @@ export class ExperienceService {
       "Mimecast",
       [
         "Created and enforced coding standards within the team and ensuring consistency with company-wide technology adoptions.",
-        "Designing new features or enhancements with the collaboration of architects.",
+        "Designed new features or enhancements with the collaboration of architects.",
         "Leaded backlog grooming, planning, design reviews, and code reviews.",
         "Coached and mentored team members to develop their skills and ensure adherence to project design.",
         "Provided guidance to other teams on proper API/REST design and practices, as an active participant of the API Guild."
@@ -31,9 +31,9 @@ export class ExperienceService {
         'Participated in architectural discussions and provided input on system design decisions.',
         'Investigated and resolved complex software issues and bugs reported by end-users or identified during testing phases.',
         'Created and maintained technical documentation for software solutions and presentations.',
-        'Communicate effectively with team members, project managers, and stakeholders to provide project updates and address any issues or concerns.',
-        'Work within an Agile development environment, participating in sprint planning, daily stand-ups, and retrospectives.',
-        'Identify areas for process improvement and contribute to the continuous improvement of development practices.'
+        'Communicated effectively with team members, project managers, and stakeholders to provide project updates and address any issues or concerns.',
+        'Worked within an Agile development environment, participating in sprint planning, daily stand-ups, and retrospectives.',
+        'Identified areas for process improvement and contribute to the continuous improvement of development practices.'
       ],
       "https://upload.wikimedia.org/wikipedia/commons/3/3e/National_Bank_Of_Canada.svg",
       "Canada",
@@ -47,15 +47,15 @@ export class ExperienceService {
       "Analyst Software Programmer",
       "2019 - 2021",
       "Desjardins",
-      ["Develop applications, programs, or computer tools of medium to high complexity and perform the necessary tests and fixes.",
-        "Ensure and carry out the update of various databases and recommend any improvements aimed at optimizing their quality and efficiency.",
-        "Analyze system components, functional and non-functional specifications, change requests, or technical issues encountered.",
-        "Ensure the resolution of technically complex problems, recommend the evolution of work methods and procedures from a technical perspective, and participate in their development to optimize their quality and efficiency."],
+      ["Developed applications, programs, or computer tools of medium to high complexity and perform the necessary tests and fixes.",
+        "Ensured and carry out the update of various databases and recommend any improvements aimed at optimizing their quality and efficiency.",
+        "Analyzed system components, functional and non-functional specifications, change requests, or technical issues encountered.",
+        "Ensured the resolution of technically complex problems, recommend the evolution of work methods and procedures from a technical perspective, and participate in their development to optimize their quality and efficiency."],
       "assets/Desjardins.svg",
       "Canada",
       "Montreal",
       "assets/countries/canada.svg",
-      []
+      ['Object-Oriented Programming (OOP)', 'Toad', 'Bitbucket', 'Struts', 'Java', 'Spring MVC', 'Mockito']
     ),
     new ExperienceContentModel(4,
       "Developer",
@@ -71,7 +71,9 @@ export class ExperienceService {
       "France",
       "Paris",
       "assets/countries/france.svg",
-      [])
+      ['Cloud Computing', 'GitHub', 'Object-Oriented Programming (OOP)',
+      'Oracle Database', 'Ansible', 'Gitlab', 'Shell Scripting', 'Amazon Web Services (AWS)',
+      'IntelliJ IDEA', 'Java', 'Spring Framework', 'Maven', 'Bootstrap', 'Linux', 'Jenkins'])
   ];
 
   getExperiences(): ExperienceContentModel[] {

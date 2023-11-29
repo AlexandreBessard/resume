@@ -5,7 +5,9 @@
     public providedBy: string,
     public isExpired = false,
     public image: string,
-    public category: Category) {
+    public category: Category,
+    public description: string,
+    public url: string) {
   }
 
  }

@@ -3,3 +3,41 @@
   max-height: 50px; /* Set the desired maximum height */
   width: 150px; /* Automatically adjust width to maintain aspect ratio */
 }
+
+.card {
+  border: 1px solid #ddd; /* Border color for the card */
+  border-radius: 8px; /* Add rounded corners for a softer look */
+  overflow: hidden; /* Ensure the card doesn't overflow its container */
+}
+
+.card-link {
+  text-decoration: none; /* Remove the default underline for links */
+  color: inherit; /* Inherit the color from the parent */
+  display: block; /* Make the link fill the entire card */
+}
+
+.card-body {
+  padding: 20px; /* Adjust padding as needed */
+}
+
+.profile {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.left-content {
+  flex-grow: 1; /* Allow the left content to grow and fill the space */
+}
+
+h4 {
+  margin-bottom: 8px; /* Add margin below the heading for spacing */
+}
+
+.date {
+  color: #666; /* Adjust the color for the date to a subdued gray */
+}
+
+
+
+

@@ -30,9 +30,13 @@ p:last-child {
   margin-bottom: 0;
 }
 
-.highlight {
+/*.highlight {
   color: #007BFF;
   font-weight: bold;
+}*/
+
+.highlight {
+  color: #6db742; /* This is the text color, you can adjust it to make the text readable on the highlighted background. */
 }
 
 .odd-row {

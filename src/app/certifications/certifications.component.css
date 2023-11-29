@@ -1,1 +1,3 @@
-
+.text-danger {
+  color: #dc3545; /* Set the desired danger (red) text color */
+}

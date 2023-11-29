@@ -12,3 +12,7 @@
   font-weight: bold; /* Make the name bold (optional) */
   color: white; /* Text color (optional) */
 }
+
+.navbar {
+  background: linear-gradient(to right, #4CAF50, #2196F3); /* Replace with your preferred colors */
+}

@@ -1,7 +1,7 @@
+<!--
 <div class="card border-light shadow-sm">
 <a [routerLink]="[index]"
-   routerLinkActive="active"
-  style="cursor: pointer;">
+   routerLinkActive="active">
         <div class="card-body">
           <div class="profile" >
             <div class="pull-left">
@@ -19,3 +19,21 @@
         </div>
         </a>
 </div>
+-->
+
+<div class="card border-light shadow-sm">
+  <a [routerLink]="[index]" routerLinkActive="active" class="card-link">
+    <div class="card-body">
+      <div class="profile">
+        <div class="left-content">
+          <h5>{{ experienceContent.title }}</h5>
+          <p class="date">{{ experienceContent.date }}</p>
+        </div>
+        <div class="right-content">
+          <img [src]="experienceContent.companyLogo" alt="{{ experienceContent.companyLogo }}" class="custom-image">
+        </div>
+      </div>
+    </div>
+  </a>
+</div>
+
