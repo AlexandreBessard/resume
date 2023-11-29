@@ -7,8 +7,8 @@
           "{'background-image': 'url(' + technologyContent.image + ')',
         'background-size': 'cover'}">-->
           <div class="text-white">
-            <img [src]="technologyContent.image" class="card-img-top technology-image"
-                 [alt]="technologyContent.title" style="width: 50px; height: 50px;">
+            <img [src]="technologyContent.image"
+                 [alt]="technologyContent.title" style="width: 50px; height: 50px; position: absolute; top: 0; right: 0;">
             <h2 class="highlight">{{ technologyContent.title }}</h2>
           <!-- Read as HTML content by Angular -->
           <div [innerHTML]="sanitizeHtml(technologyContent.description)"></div>
