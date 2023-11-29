@@ -16,20 +16,20 @@ export class TechnologyService {
       "assets/technologies/java.svg"),
 
     new TechnologyContentModel("Angular",
-      "<section>\n" +
+      "<section><br>\n" +
       "      <p>\n" +
       "        Embracing the power of the latest Angular version to create dynamic and scalable\n" +
       "        web applications.\n" +
       "      </p>\n" +
       "    </section><br>\n" +
       "        <p>Proficient in leveraging Angular's reactive programming capabilities, including\n" +
-      "        RxJS, to build responsive and real-time user interfaces. Implementing observable\n" +
+      "        RxJS, to build responsive and real-time user interfaces. <br><br>Implementing observable\n" +
       "        patterns for seamless data flow.\n" +
       "      </p>\n" +
       "    </section>",
       "assets/technologies/angular.svg"),
     new TechnologyContentModel("Spring Framework",
-      "<section>\n" +
+      "<section><br>\n" +
       "      <p>\n" +
       "        Proficient in developing robust and scalable applications using Spring Boot.\n" +
       "      </p>\n" +
@@ -50,48 +50,49 @@ export class TechnologyService {
       "    </section>",
       "assets/technologies/spring.svg"),
     new TechnologyContentModel("AWS",
-      "<section>\n" +
+      "<section><br>\n" +
         "      <p>\n" +
-        "        Proficient in designing, implementing, and managing cloud infrastructure on AWS.\n" +
+        "        Proficient in designing, implementing, and managing cloud infrastructure on AWS.<br><br>\n" +
         "        Leveraging a wide range of AWS services to build scalable, secure, and highly\n" +
         "        available solutions for diverse application workloads.\n" +
         "      </p>\n" +
         "    </section>",
       "assets/technologies/AWS.svg"),
     new TechnologyContentModel("Kubernetes",
-      "<section>\n" +
+      "<section><br>\n" +
         "      <p>\n" +
         "        Proficient in designing, deploying, and managing containerized applications using\n" +
-        "        Kubernetes. Leveraging container orchestration for efficient scaling, load balancing,\n" +
+        "        Kubernetes.<br><br> Leveraging container orchestration for efficient scaling, load balancing,\n" +
         "        and automated deployment.\n" +
         "      </p>\n" +
         "    </section>",
       "assets/technologies/kubernetes.svg"),
     new TechnologyContentModel("Terraform",
-      "<section>\n" +
+      "<section><br>\n" +
         "      <p>\n" +
         "        Proficient in using Terraform for Infrastructure as Code (IaC) to define, deploy,\n" +
-        "        and manage infrastructure resources across various cloud providers. Ensuring\n" +
+        "        and manage infrastructure resources across various cloud providers.<br><br> Ensuring\n" +
         "        consistency and repeatability in infrastructure provisioning.\n" +
         "      </p>\n" +
         "    </section>",
       "assets/technologies/terraform.svg"),
     new TechnologyContentModel("Version Control with GitLab",
-        "<section>\n" +
-      " <p>Proficient in utilizing GitLab for version control, collaborative development and CI/CD pipelines. Managing source code repositories and ensuring seamless collaboration among development teams.</p>",
+        "<section><br>\n" +
+      " <p>Proficient in utilizing GitLab for version control, collaborative development and CI/CD pipelines. " +
+      "<br><br>Managing source code repositories and ensuring seamless collaboration among development teams.</p>",
         "assets/technologies/gitlab.svg"),
 
     new TechnologyContentModel("Jenkins",
-        "<p>Proficient in configuring and managing Jenkins for continuous integration, enabling " +
-        " automated building, testing, and deployment of software projects. Ensuring rapid" +
-        " and reliable software delivery.</p>",
+        "<section><br><p>Proficient in configuring and managing Jenkins for continuous integration, enabling " +
+        " automated building, testing, and deployment of software projects. <br><br>Ensuring rapid" +
+        " and reliable software delivery.</p></section>",
         "assets/technologies/jenkins.svg"),
 
     new TechnologyContentModel("Kafka",
-        "<section>\n" +
+        "<section><br>\n" +
         "      <p>\n" +
         "        Proficient in utilizing Apache Kafka for building scalable and real-time data\n" +
-        "        streaming solutions. Designing and implementing distributed messaging systems to\n" +
+        "        streaming solutions. <br><br>Designing and implementing distributed messaging systems to\n" +
         "        handle high-throughput, fault-tolerance, and seamless data integration across\n" +
         "        diverse applications.\n" +
         "      </p>\n" +
