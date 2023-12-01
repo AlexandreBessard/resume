@@ -7,6 +7,8 @@ import {ExperienceDetailComponent} from "./experiences/experience-detail/experie
 import {TechnologiesComponent} from "./technologies/technologies.component";
 import {CertificationsComponent} from "./certifications/certifications.component";
 import {ContactComponent} from "./contact/contact.component";
+import {ProjectsComponent} from './projects/projects.component';
+import {ProjectDetailComponent} from './projects/project-detail/project-detail.component';
 
 const routes: Routes = [
   { path: '', redirectTo: '/about', pathMatch: 'full' },
@@ -15,6 +17,8 @@ const routes: Routes = [
       { path: '', component: ExperienceStartComponent },
       { path: ':id', component: ExperienceDetailComponent }
     ] },
+  { path: 'projects', component: ProjectsComponent },
+  { path: 'project/:id', component: ProjectDetailComponent },
   { path: 'technologies', component: TechnologiesComponent },
   { path: 'certifications', component: CertificationsComponent },
   { path: 'contact', component: ContactComponent },

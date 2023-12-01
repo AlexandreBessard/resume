@@ -39,7 +39,7 @@ export class ExperienceService {
       "Canada",
       "Toronto",
       "assets/countries/canada.svg",
-      ['Docker', 'Spring Boot', 'Bitbucket', 'Terraform', 'React', 'AWS', 'Kubernetes',
+      ['Docker', 'Spring Boot', 'Bitbucket', 'Terraform', 'Angular', 'AWS', 'Kubernetes',
         'Splunk', 'Java', 'Maven', 'Jenkins']
     ),
     new ExperienceContentModel(
