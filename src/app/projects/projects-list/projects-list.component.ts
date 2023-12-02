@@ -1,7 +1,8 @@
-import { Component } from '@angular/core';
+import {Component, OnInit} from '@angular/core';
 import { CommonModule } from '@angular/common';
-import {RouterLink} from '@angular/router';
+import {Router, RouterLink} from '@angular/router';
 import {ProjectDetail, ProjectModel} from '../project.model';
+import {ProjectService} from '../project.service';
 
 @Component({
   selector: 'app-projects-list',
@@ -10,13 +11,21 @@ import {ProjectDetail, ProjectModel} from '../project.model';
   templateUrl: './projects-list.component.html',
   styleUrl: './projects-list.component.css'
 })
-export class ProjectsListComponent {
+export class ProjectsListComponent implements OnInit {
 
   projects: ProjectModel[] = [];
 
-  constructor() {
-    this.projects.push(new ProjectModel("1", "Project name 1",
-      new ProjectDetail("desc")));
+  constructor(private projectService: ProjectService,
+              private router: Router) {}
+
+  ngOnInit(): void {
+    this.projects = this.projectService.getProjects();
   }
+
+  detailProjectSelected(project: ProjectModel) {
+    this.projectService.updateSelectedProject(project);
+    this.router.navigate(['/project/details']);
+  }
+
 
 }

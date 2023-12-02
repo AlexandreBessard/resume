@@ -1,15 +1,14 @@
 <div class="row justify-content-md-center">
-<div class="col-12 col-md-8 col-xl-6 mb-4" *ngFor="let project of projects">
-  <div class="card border-light shadow-sm" [routerLink]="['/project', project.id]">
-    <div class="d-flex justify-content-center align-items-center">
-      <div class="card-body">
-        <div class="profile">
-          <p>{{ project.name }}</p>
-          <p>{{ project.detail?.description }}</p>
+  <div class="col-12 col-md-8 col-xl-6 mb-4" *ngFor="let project of projects">
+    <div style="cursor: pointer;" (click)="detailProjectSelected(project)" class="card border-light shadow-sm">
+      <div class="d-flex justify-content-center align-items-center">
+        <div class="card-body">
+          <div class="profile">
+            <p>{{ project.name }}</p>
+            <p>{{ project.detail?.description }}</p>
+          </div>
         </div>
       </div>
     </div>
   </div>
 </div>
-</div>
-
