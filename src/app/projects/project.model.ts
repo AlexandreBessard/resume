@@ -2,14 +2,14 @@
 
 export class ProjectModel {
 
-  detail: ProjectDetail | undefined;
+  detail: ProjectDetail;
 
   constructor(
-    public id?: string,
-    public name?: string,
-    public gitUrl?: string,
-    public image?: string,
-    detail?: ProjectDetail
+    public id: string,
+    public name: string,
+    public gitUrl: string,
+    public image: string,
+    detail: ProjectDetail
   ) {
     this.detail = detail;
   }
@@ -19,7 +19,8 @@ export class ProjectDetail {
 
   constructor(
     public description: string,
-    public stack: string[]
+    public stack: string[],
+    public briefDescription: string
   ) {
   }
 

@@ -1,6 +1,7 @@
 import {Injectable, OnInit} from '@angular/core';
 import {ProjectDetail, ProjectModel} from './project.model';
 import {BehaviorSubject, Observable} from 'rxjs';
+import {ProjectsContent} from './projects.content';
 
 @Injectable({
   providedIn: 'root'
@@ -9,13 +10,18 @@ export class ProjectService {
 
   private projects: ProjectModel[] = [];
 
-  private selectedProjectSubject: BehaviorSubject<ProjectModel> = new BehaviorSubject<ProjectModel>({detail: undefined});
+  private selectedProjectSubject: BehaviorSubject<ProjectModel> = new BehaviorSubject<ProjectModel>(
+    {
+      id: "",
+      name: "",
+      gitUrl: "",
+      image: "",
+      detail: new ProjectDetail("", [], "")});
 
   selectedProjectAction$: Observable<ProjectModel> = this.selectedProjectSubject.asObservable();
 
   constructor() {
-    this.projects.push(new ProjectModel("1", "Project name 1", "git_url", "imgUrl",
-      new ProjectDetail("desc", ["Java", "Angular"])));
+    this.projects = ProjectsContent.projectsContent;
   }
 
   getProjects(): ProjectModel[] {

@@ -1,3 +1,22 @@
-<div *ngIf="selectedProject$ | async; let project">
-  <span> {{project.name}} </span>
+<div class="card border-light shadow-sm mt-4">
+  <div class="d-flex justify-content-center align-items-center">
+    <div class="card-body">
+      <div class="profile">
+        <div *ngIf="selectedProject$ | async; let project">
+          <h1>Project Overview: "{{ project.name }}"</h1>
+          <span class="contact-icon">
+            <img src="assets/contact/github.svg" alt="Github Icon">
+          </span>
+          <div class="contact-info">
+            <strong>GitHub:</strong>
+            <p><a href="{{project.gitUrl}}" target="_blank">{{project.gitUrl}}</a></p>
+          </div>
+          <br>
+          <div [innerHTML]="sanitizeHtml(project.detail.description)"></div>
+        </div>
+        <!-- Improved Button Styling with Bootstrap -->
+        <button (click)="goBackToProject()" class="btn btn-primary mt-3">Previous page</button>
+      </div>
+    </div>
+  </div>
 </div>
