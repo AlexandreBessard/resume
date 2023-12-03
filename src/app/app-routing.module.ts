@@ -18,17 +18,12 @@ const routes: Routes = [
       { path: ':id', component: ExperienceDetailComponent }
     ] },
   { path: 'projects', component: ProjectsComponent },
-  // Can be removed once the redirection works
+
   { path: 'project/:id', component: ProjectDetailComponent },
   { path: 'project/details', component: ProjectDetailComponent },
   { path: 'technologies', component: TechnologiesComponent },
   { path: 'certifications', component: CertificationsComponent },
   { path: 'contact', component: ContactComponent },
-  //resume
-  { path: 'resume/about', redirectTo: '/about'},
-  { path: 'resume/experiences', redirectTo: '/experiences'},
-  { path: 'resume/**', redirectTo: '/about'},
-
 
   { path: '', pathMatch: 'full', redirectTo: '/about'},
   { path: '**', redirectTo: "/about"}

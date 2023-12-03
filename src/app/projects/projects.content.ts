@@ -4,7 +4,7 @@ export class ProjectsContent {
 
   static readonly projectsContent: ProjectModel[] = [
 
-    new ProjectModel("1", "CRUD application", "https://github.com/AlexandreBessard/crud-application", "imgUrl",
+    new ProjectModel("1", "CRUD application", "https://github.com/AlexandreBessard/crud-application", "imgUrl", "https://alexandrebessard.github.io/crud-application",
       new ProjectDetail(
         "<h4>Employee Management:</h4>\n" +
         "    <ul>\n" +
@@ -43,7 +43,7 @@ export class ProjectsContent {
       ),
 
 
-    new ProjectModel("2", "Project in progress...", "", "",
+    new ProjectModel("2", "Project in progress...", "", "", "",
       new ProjectDetail("In progress, come back later...",
         ["Java", "Angular"],
       ""))

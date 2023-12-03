@@ -9,6 +9,7 @@ export class ProjectModel {
     public name: string,
     public gitUrl: string,
     public image: string,
+    public githubUrlHosted: string,
     detail: ProjectDetail
   ) {
     this.detail = detail;

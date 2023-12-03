@@ -16,6 +16,7 @@ export class ProjectService {
       name: "",
       gitUrl: "",
       image: "",
+      githubUrlHosted: "",
       detail: new ProjectDetail("", [], "")});
 
   selectedProjectAction$: Observable<ProjectModel> = this.selectedProjectSubject.asObservable();
