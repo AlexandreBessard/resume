@@ -14,8 +14,9 @@
           <br>
           <div [innerHTML]="sanitizeHtml(project.detail.description)"></div>
         </div>
-        <!-- Improved Button Styling with Bootstrap -->
-        <button (click)="goBackToProject()" class="btn btn-primary mt-3">Previous page</button>
+        <button (click)="goBackToProject()"
+                style="margin-top: 20px;"
+                class="btn btn-outline-success">Previous page</button>
       </div>
     </div>
   </div>
