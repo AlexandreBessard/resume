@@ -24,6 +24,12 @@ const routes: Routes = [
   { path: 'technologies', component: TechnologiesComponent },
   { path: 'certifications', component: CertificationsComponent },
   { path: 'contact', component: ContactComponent },
+  //resume
+  { path: 'resume/about', redirectTo: '/about'},
+  { path: 'resume/experiences', redirectTo: '/experiences'},
+  { path: 'resume/**', redirectTo: '/about'},
+
+
   { path: '', pathMatch: 'full', redirectTo: '/about'},
   { path: '**', redirectTo: "/about"}
 ];
