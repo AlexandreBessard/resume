@@ -1,4 +1,4 @@
-import {Component, OnInit} from '@angular/core';
+import {Component, HostBinding, OnInit} from '@angular/core';
 import { CommonModule } from '@angular/common';
 import {Router, RouterLink} from '@angular/router';
 import {ProjectDetail, ProjectModel} from '../project.model';
@@ -15,6 +15,9 @@ export class ProjectsListComponent implements OnInit {
 
   projects: ProjectModel[] = [];
 
+  @HostBinding('class.hovered')
+  hovered: boolean = false;
+
   constructor(private projectService: ProjectService,
               private router: Router) {}
 
@@ -25,6 +28,16 @@ export class ProjectsListComponent implements OnInit {
   detailProjectSelected(project: ProjectModel) {
     this.projectService.updateSelectedProject(project);
     this.router.navigate(['/project/details']);
+  }
+
+  onMouseEnter() {
+    console.log("onMouseEnter");
+    this.hovered = true;
+  }
+
+  onMouseLeave() {
+    console.log("onMouseLeave");
+    this.hovered = false;
   }
 
 

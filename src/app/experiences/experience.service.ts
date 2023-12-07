@@ -18,7 +18,7 @@ export class ExperienceService {
       "Canada",
       "Toronto",
       "assets/countries/canada.svg",
-      ['Micronaut', 'Docker', 'Gitlab', 'Terraform', 'LocalStack', 'AWS', 'Java', 'Jenkins']
+      ['Spring Boot', 'Docker', 'Gitlab', 'Terraform', 'LocalStack', 'AWS', 'Java', 'Jenkins']
     ),
     new ExperienceContentModel(
       1,

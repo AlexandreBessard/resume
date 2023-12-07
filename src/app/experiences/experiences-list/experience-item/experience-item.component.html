@@ -1,33 +1,16 @@
-<!--
-<div class="card border-light shadow-sm">
-<a [routerLink]="[index]"
-   routerLinkActive="active">
-        <div class="card-body">
-          <div class="profile" >
-            <div class="pull-left">
-            <h4>{{ experienceContent.title }}</h4>
-            <p>{{ experienceContent.date }}</p>
-            </div>
-            <span class="pull-right">
-              <img
-              [src]="experienceContent.companyLogo"
-              alt="{{ experienceContent.companyLogo }}"
-              class="custom-image"
-              style="max-height: 150px;">
-            </span>
-          </div>
-        </div>
-        </a>
-</div>
--->
-
-<div class="card border-light shadow-sm">
+<div class="card border-light shadow-sm"
+     (mouseenter)="onMouseEnter()"
+     (mouseleave)="onMouseLeave()"
+     [ngClass]="{'hovered': hovered}"
+     style="margin-bottom: 20px;">
   <a [routerLink]="[index]" routerLinkActive="active" class="card-link">
     <div class="card-body">
       <div class="profile">
         <div class="left-content">
+          <div>
           <h5>{{ experienceContent.title }}</h5>
-          <p class="date">{{ experienceContent.date }}</p>
+          <p>{{ experienceContent.date }}</p>
+          </div>
         </div>
         <div class="right-content">
           <img [src]="experienceContent.companyLogo" alt="{{ experienceContent.companyLogo }}" class="custom-image">

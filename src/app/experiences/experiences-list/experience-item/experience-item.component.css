@@ -34,10 +34,7 @@ h4 {
   margin-bottom: 8px; /* Add margin below the heading for spacing */
 }
 
-.date {
-  color: #666; /* Adjust the color for the date to a subdued gray */
+.card:hover {
+  /* Your hover styles go here */
+  background: linear-gradient(to right, #4CAF50, #2196F3);
 }
-
-
-
-

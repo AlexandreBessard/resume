@@ -1,0 +1,4 @@
+.card:hover {
+  /* Your hover styles go here */
+  background: linear-gradient(to right, #4CAF50, #2196F3);
+}

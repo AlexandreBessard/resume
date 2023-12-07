@@ -1,3 +1,7 @@
 .text-danger {
   color: #dc3545; /* Set the desired danger (red) text color */
 }
+
+.btn.active {
+  background: linear-gradient(to right, #4CAF50, #2196F3);
+}

@@ -1,4 +1,4 @@
-import {Component, Input} from '@angular/core';
+import {Component, HostBinding, Input} from '@angular/core';
 import {ExperienceContentModel} from "../../experience-content.model";
 
 @Component({
@@ -14,9 +14,23 @@ export class ExperienceItemComponent {
   @Input()
   index: number = 0;
 
+  // Use @HostBinding to dynamically add a class for styling
+  @HostBinding('class.hovered')
+  hovered: boolean = false;
+
   constructor() {
     this.experienceContent = new ExperienceContentModel(0,'', '', '', [], '',
       "", "", "");
+  }
+
+  protected readonly onmouseleave = onmouseleave;
+
+  onMouseEnter() {
+    this.hovered = true;
+  }
+
+  onMouseLeave() {
+    this.hovered = false;
   }
 
 }
