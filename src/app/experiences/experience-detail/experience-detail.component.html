@@ -19,14 +19,17 @@
             >
             <div class="small-image-text">{{experienceContent.city}}</div>
           </div>
-        <ul class="custom-list">
-          <li class="list-group-item" *ngFor="let desc of experienceContent.description">
-            <span class="bullet-point">&#8226;</span> {{ desc }}<br><br>
-          </li>
-        </ul>
-          <p>Skills: <br>
+          <ul>
+            <li *ngFor="let desc of experienceContent.description" style="margin-bottom: 20px;">
+              <div>
+                <h4 class="bullet-point me-3 text-success">{{ desc.key }}</h4>
+                <p>{{ desc.value }}</p>
+              </div>
+            </li>
+          </ul>
+          <p>Stack used: <br>
             <span *ngFor="let skill of experienceContent.skills;
-            let last = last">{{ skill }}{{ !last ? ', ' : '' }}</span>
+            let last = last">{{ skill }}{{ !last ? ', ' : '.' }}</span>
           </p>
       </div>
       </div>

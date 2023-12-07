@@ -3,7 +3,7 @@ import {TechnologyContentModel} from "./technology-content.model";
 export class TechnologyService {
 
   private technologiesContent: TechnologyContentModel[] = [
-    new TechnologyContentModel("Java, 8, 11, 17",
+    new TechnologyContentModel("Java 8, 11, 17",
       "<section><br>" +
       "<p>Leveraging Java 17's latest features such as pattern matching, sealed classes, and record types to build modern and maintainable applications.</p>" +
       "    </section>" +

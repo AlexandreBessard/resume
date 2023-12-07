@@ -5,3 +5,7 @@
 .btn.active {
   background: linear-gradient(to right, #4CAF50, #2196F3);
 }
+
+.img-fluid {
+  max-height: 150px;
+}
