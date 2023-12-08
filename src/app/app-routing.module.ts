@@ -9,6 +9,7 @@ import {CertificationsComponent} from "./certifications/certifications.component
 import {ContactComponent} from "./contact/contact.component";
 import {ProjectsComponent} from './projects/projects.component';
 import {ProjectDetailComponent} from './projects/project-detail/project-detail.component';
+import {EducationsComponent} from './educations/educations.component';
 
 const routes: Routes = [
   { path: '', redirectTo: '/about', pathMatch: 'full' },
@@ -18,6 +19,8 @@ const routes: Routes = [
       { path: ':id', component: ExperienceDetailComponent }
     ] },
   { path: 'projects', component: ProjectsComponent },
+
+  { path: 'educations', component: EducationsComponent },
 
   { path: 'project/:id', component: ProjectDetailComponent },
   { path: 'project/details', component: ProjectDetailComponent },
