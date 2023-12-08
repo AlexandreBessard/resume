@@ -1,5 +1,3 @@
-
-
 .contact-container {
   max-width: 600px;
   margin: 20px auto;
@@ -11,12 +9,12 @@
 .contact-method {
   display: flex;
   align-items: center;
+  flex-direction: column; /* Adjusted to column layout */
   margin-bottom: 20px;
 }
 
 .contact-icon {
-  margin-right: 10px;
-  font-size: 24px;
+  margin-bottom: 10px; /* Added some spacing between icon and info */
 }
 
 .contact-icon img {
@@ -28,15 +26,20 @@
 .contact-info {
   display: flex;
   flex-direction: column;
+  text-align: center; /* Center the text */
 }
 
 .qrcode-container {
   text-align: center;
-  margin-top: 20px;
 }
 
 .qrcode-image {
   width: 50%; /* Adjust the size as needed */
-  margin-left: 60px; /* Add some spacing */
+  margin-top: 10px; /* Added some spacing between QR code and text */
   border-radius: 20px; /* Add rounded corners */
+}
+
+/* Optional: Add styles for the "Click on the QR code to zoom in!" text */
+p {
+  margin-top: 5px; /* Add spacing between QR code and text */
 }

@@ -20,6 +20,7 @@ import {TechnologyItemComponent} from "./technologies/technology-item/technology
 import {CertificationService} from './certifications/certification.service';
 import {FooterComponent} from './footer/footer.component';
 import {SafeHtmlPipe} from './pipes/safehtml.pipe';
+import {ImageDialogComponent} from './image-dialog/image-dialog.component';
 
 @NgModule({
   declarations: [
@@ -37,7 +38,8 @@ import {SafeHtmlPipe} from './pipes/safehtml.pipe';
     CertificationsComponent,
     ContactComponent,
     TechnologyItemComponent,
-    SafeHtmlPipe
+    SafeHtmlPipe,
+    ImageDialogComponent,
   ],
     imports: [
         BrowserModule,

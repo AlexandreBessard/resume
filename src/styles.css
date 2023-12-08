@@ -42,3 +42,14 @@ p:last-child {
 .odd-row {
   background-color: #eef1ee; /* Set the background color for even rows */
 }
+
+html, body { height: 100%; }
+body { margin: 0; font-family: Roboto, "Helvetica Neue", sans-serif; }
+
+
+/*.image-dialog-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100%;
+}*/
