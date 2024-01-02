@@ -4,7 +4,7 @@
       <div class="profile">
         <div *ngIf="selectedProject$ | async; let project">
           <h1>Project Overview: "{{ project.name }}"</h1>
-          <h4>Access the project hosted on GitHub by clicking on the link provided below:<br>
+          <h4>Access the project by clicking on the link provided below:<br>
             <p><a href="{{project.githubUrlHosted}}" target="_blank">{{project.githubUrlHosted}}</a></p>
           </h4>
           <span class="contact-icon">
