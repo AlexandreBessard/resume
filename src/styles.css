@@ -1,55 +1,18 @@
+* { box-sizing: border-box; }
+
+html, body {
+  margin: 0;
+  padding: 0;
+}
+
 body {
-  font-family: Arial, sans-serif;
-  background-color: #f7f7f7;
-  min-height: 75rem;
-  padding-top: 4.5rem;
-
+  font-family: 'Inter', Roboto, 'Helvetica Neue', Arial, sans-serif;
+  background: #eef1f6;
+  color: #1f2430;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
 }
 
-.profile {
-  background-color: #fff;
-  padding: 20px;
-  border-radius: 5px;
-  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
-  text-align: justify;
+@media (min-width: 821px) {
+  body { padding: 32px 16px; }
 }
-
-h1 {
-  font-size: 28px;
-  color: #333;
-  margin-bottom: 10px;
-}
-
-p {
-  font-size: 18px;
-  color: #555;
-  margin-bottom: 20px;
-}
-
-p:last-child {
-  margin-bottom: 0;
-}
-
-/*.highlight {
-  color: #007BFF;
-  font-weight: bold;
-}*/
-
-.highlight {
-  color: #6db742; /* This is the text color, you can adjust it to make the text readable on the highlighted background. */
-}
-
-.odd-row {
-  background-color: #eef1ee; /* Set the background color for even rows */
-}
-
-html, body { height: 100%; }
-body { margin: 0; font-family: Roboto, "Helvetica Neue", sans-serif; }
-
-
-/*.image-dialog-container {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  height: 100%;
-}*/

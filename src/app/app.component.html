@@ -1,10 +1,89 @@
-<app-navbar></app-navbar>
-<div class="container">
-  <div class="row">
-    <div class="col-md-12">
-      <router-outlet></router-outlet>
-    </div>
-  </div>
-</div>
-<app-footer></app-footer>
+<main class="page">
+  <!-- Header -->
+  <header class="header">
+    <div class="header__main">
+      <h1 class="name">{{ name }}</h1>
+      <p class="title">{{ title }}</p>
+      <p class="subtitle">{{ subtitle }}</p>
 
+      <ul class="contacts">
+        <li *ngFor="let c of contacts">
+          <a *ngIf="c.href" [href]="c.href" target="_blank" rel="noopener">{{ c.label }}</a>
+          <span *ngIf="!c.href">{{ c.label }}</span>
+        </li>
+      </ul>
+    </div>
+
+    <a class="download" [href]="resumePdf" download>
+      <span class="download__icon">↓</span>
+      Télécharger le CV (PDF)
+    </a>
+  </header>
+
+  <!-- Availability bar -->
+  <ul class="availability">
+    <li *ngFor="let a of availability">{{ a }}</li>
+  </ul>
+
+  <div class="body">
+    <!-- Left column -->
+    <div class="col col--main">
+      <section class="block">
+        <h2 class="block__title">Profil</h2>
+        <p class="profile">{{ profile }}</p>
+      </section>
+
+      <section class="block">
+        <h2 class="block__title">Expérience professionnelle</h2>
+        <article class="exp" *ngFor="let e of experiences">
+          <div class="exp__head">
+            <h3 class="exp__company">{{ e.company }}</h3>
+            <span class="exp__period">{{ e.period }}</span>
+          </div>
+          <p class="exp__meta">
+            <span class="exp__role">{{ e.role }}</span>
+            <span class="exp__loc">· {{ e.location }}</span>
+          </p>
+          <p class="exp__context">{{ e.context }}</p>
+          <ul class="exp__highlights">
+            <li *ngFor="let h of e.highlights">{{ h }}</li>
+          </ul>
+          <p class="exp__stack"><span>Stack</span> {{ e.stack }}</p>
+        </article>
+      </section>
+
+      <section class="block">
+        <h2 class="block__title">Formation</h2>
+        <div class="edu" *ngFor="let ed of educations">
+          <div class="edu__line">
+            <h3 class="edu__title">{{ ed.title }}</h3>
+            <span class="edu__period">{{ ed.period }}</span>
+          </div>
+          <p class="edu__school">{{ ed.school }}</p>
+        </div>
+      </section>
+    </div>
+
+    <!-- Right column -->
+    <aside class="col col--side">
+      <section class="block">
+        <h2 class="block__title">Compétences techniques</h2>
+        <div class="skill" *ngFor="let s of skills">
+          <h3 class="skill__label">{{ s.label }}</h3>
+          <p class="skill__items">{{ s.items }}</p>
+        </div>
+      </section>
+
+      <section class="block">
+        <h2 class="block__title">Certifications</h2>
+        <ul class="certs">
+          <li *ngFor="let cert of certifications">{{ cert }}</li>
+        </ul>
+      </section>
+    </aside>
+  </div>
+
+  <footer class="foot">
+    Lettres de recommandation Atos / Ministère de l'Éducation Nationale et Atos / BRGM communiquées sur demande.
+  </footer>
+</main>
