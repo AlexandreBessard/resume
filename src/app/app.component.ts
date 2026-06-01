@@ -88,7 +88,6 @@ export class AppComponent {
         'Freelance via LEXOFT',
         'Missions 6–24 mois',
         'Télétravail / hybride (Orléans, Paris)',
-        'TJM : 750–850 €/j HT',
       ],
       profile:
         `Architecte Cloud Senior certifié AWS (8 certifications cloud & éditeurs), 9+ ans d'expérience, ` +
@@ -224,7 +223,6 @@ export class AppComponent {
         'Freelance via LEXOFT',
         '6–24 month engagements',
         'Remote / hybrid (Orléans, Paris)',
-        'Day rate: €750–850/day (excl. tax)',
       ],
       profile:
         `AWS-certified Senior Cloud Architect (8 cloud & vendor certifications), 9+ years of experience, ` +
