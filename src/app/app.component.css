@@ -76,6 +76,52 @@
   text-decoration: underline;
 }
 
+.header__actions {
+  flex-shrink: 0;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-end;
+  gap: 12px;
+}
+
+.lang {
+  display: inline-flex;
+  border: 1px solid var(--line);
+  border-radius: 6px;
+  overflow: hidden;
+  background: #fff;
+}
+
+.lang__btn {
+  border: 0;
+  background: transparent;
+  color: var(--muted);
+  font: inherit;
+  font-size: 12px;
+  font-weight: 700;
+  letter-spacing: 0.5px;
+  padding: 6px 14px;
+  cursor: pointer;
+  transition: background 0.15s ease, color 0.15s ease;
+}
+
+.lang__btn + .lang__btn {
+  border-left: 1px solid var(--line);
+}
+
+.lang__btn:hover {
+  color: var(--navy);
+}
+
+.lang__btn--active {
+  background: var(--navy);
+  color: #fff;
+}
+
+.lang__btn--active:hover {
+  color: #fff;
+}
+
 .download {
   flex-shrink: 0;
   display: inline-flex;
@@ -340,6 +386,13 @@
   .header {
     flex-direction: column;
     padding: 28px 24px 18px;
+  }
+  .header__actions {
+    flex-direction: row;
+    align-items: center;
+    align-self: stretch;
+    justify-content: space-between;
+    margin-top: 4px;
   }
   .availability { padding: 14px 24px; }
   .body { grid-template-columns: 1fr; }

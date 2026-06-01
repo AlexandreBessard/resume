@@ -3,39 +3,48 @@
   <header class="header">
     <div class="header__main">
       <h1 class="name">{{ name }}</h1>
-      <p class="title">{{ title }}</p>
-      <p class="subtitle">{{ subtitle }}</p>
+      <p class="title">{{ c.title }}</p>
+      <p class="subtitle">{{ c.subtitle }}</p>
 
       <ul class="contacts">
-        <li *ngFor="let c of contacts">
-          <a *ngIf="c.href" [href]="c.href" target="_blank" rel="noopener">{{ c.label }}</a>
-          <span *ngIf="!c.href">{{ c.label }}</span>
+        <li *ngFor="let contact of contacts">
+          <a *ngIf="contact.href" [href]="contact.href" target="_blank" rel="noopener">{{ contact.label }}</a>
+          <span *ngIf="!contact.href">{{ contact.label }}</span>
         </li>
       </ul>
     </div>
 
-    <a class="download" [href]="resumePdf" download>
-      <span class="download__icon">↓</span>
-      Télécharger le CV (PDF)
-    </a>
+    <div class="header__actions">
+      <div class="lang" role="group" aria-label="Language / Langue">
+        <button type="button" class="lang__btn" [class.lang__btn--active]="lang === 'fr'"
+                [attr.aria-pressed]="lang === 'fr'" (click)="setLang('fr')">FR</button>
+        <button type="button" class="lang__btn" [class.lang__btn--active]="lang === 'en'"
+                [attr.aria-pressed]="lang === 'en'" (click)="setLang('en')">EN</button>
+      </div>
+
+      <a class="download" [href]="resumePdf" download>
+        <span class="download__icon">↓</span>
+        {{ c.ui.download }}
+      </a>
+    </div>
   </header>
 
   <!-- Availability bar -->
   <ul class="availability">
-    <li *ngFor="let a of availability">{{ a }}</li>
+    <li *ngFor="let a of c.availability">{{ a }}</li>
   </ul>
 
   <div class="body">
     <!-- Left column -->
     <div class="col col--main">
       <section class="block">
-        <h2 class="block__title">Profil</h2>
-        <p class="profile">{{ profile }}</p>
+        <h2 class="block__title">{{ c.ui.profile }}</h2>
+        <p class="profile">{{ c.profile }}</p>
       </section>
 
       <section class="block">
-        <h2 class="block__title">Expérience professionnelle</h2>
-        <article class="exp" *ngFor="let e of experiences">
+        <h2 class="block__title">{{ c.ui.experience }}</h2>
+        <article class="exp" *ngFor="let e of c.experiences">
           <div class="exp__head">
             <h3 class="exp__company">{{ e.company }}</h3>
             <span class="exp__period">{{ e.period }}</span>
@@ -48,13 +57,13 @@
           <ul class="exp__highlights">
             <li *ngFor="let h of e.highlights">{{ h }}</li>
           </ul>
-          <p class="exp__stack"><span>Stack</span> {{ e.stack }}</p>
+          <p class="exp__stack"><span>{{ c.ui.stack }}</span> {{ e.stack }}</p>
         </article>
       </section>
 
       <section class="block">
-        <h2 class="block__title">Formation</h2>
-        <div class="edu" *ngFor="let ed of educations">
+        <h2 class="block__title">{{ c.ui.education }}</h2>
+        <div class="edu" *ngFor="let ed of c.educations">
           <div class="edu__line">
             <h3 class="edu__title">{{ ed.title }}</h3>
             <span class="edu__period">{{ ed.period }}</span>
@@ -67,23 +76,23 @@
     <!-- Right column -->
     <aside class="col col--side">
       <section class="block">
-        <h2 class="block__title">Compétences techniques</h2>
-        <div class="skill" *ngFor="let s of skills">
+        <h2 class="block__title">{{ c.ui.skills }}</h2>
+        <div class="skill" *ngFor="let s of c.skills">
           <h3 class="skill__label">{{ s.label }}</h3>
           <p class="skill__items">{{ s.items }}</p>
         </div>
       </section>
 
       <section class="block">
-        <h2 class="block__title">Certifications</h2>
+        <h2 class="block__title">{{ c.ui.certifications }}</h2>
         <ul class="certs">
-          <li *ngFor="let cert of certifications">{{ cert }}</li>
+          <li *ngFor="let cert of c.certifications">{{ cert }}</li>
         </ul>
       </section>
     </aside>
   </div>
 
   <footer class="foot">
-    Lettres de recommandation Atos / Ministère de l'Éducation Nationale et Atos / BRGM communiquées sur demande.
+    {{ c.ui.footer }}
   </footer>
 </main>
